@@ -17,7 +17,7 @@ other in real-time while sharing a common storage for persistence.
 - WebSocket
 
 ### High Level Design
-![Diagram Title](./javaclient/documentation/component_diagram.png)
+![Diagram Title](documentation/component_diagram.png)
 
 ### Technologies Used
 - **C# Client**

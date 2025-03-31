@@ -1,0 +1,18 @@
+@startuml
+package "C# Client" {
+    [Razor Pages Frontend]
+}
+
+package "Java Client" {
+    [Vaadin Frontend]
+}
+
+package "Storage" {
+    [Database]
+}
+
+[C# Client] --> [Database] : Store/Fetch Messages
+[Java Client] --> [Database] : Store/Fetch Messages
+[C# Client] --> [Java Client] : WebSocket Communication
+[Java Client] --> [C# Client] : WebSocket Communication
+@enduml
